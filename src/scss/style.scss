@@ -3,7 +3,7 @@
 $highText: #383838;
 $highPink: #F1214F;
 body{
-    a{
+    a,.social-item, .vilogo{
         cursor: pointer;
     }
 }
@@ -162,6 +162,7 @@ header{
     }
 }
 .social-items{
+    padding-left: 26px;
     padding-bottom: 50px;
     .social-item{
         padding-top: 23px;
