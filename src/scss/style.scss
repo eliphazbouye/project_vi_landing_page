@@ -1,5 +1,5 @@
 @import 'reset/reset';
-@import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Open+Sans&family=Poppins&family=Roboto:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Libre+Baskerville:wght@700&family=Open+Sans&family=Poppins&family=Roboto:wght@500;900&display=swap');
 $highText: #383838;
 $highPink: #F1214F;
 body{
@@ -7,25 +7,43 @@ body{
         cursor: pointer;
     }
 }
+.main{
+    display: grid;
+    grid-template-columns: 60px auto;
+
+}
 // Header 
 // Navigation
 header{
     nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         font-family: 'Poppins', sans-serif;
         text-align: center;
+        padding-top: 43px;
+
+        .navig-cta{
+            color: $highPink;
+            font-weight: bold;
+        }
         .items{
-            padding-top: 43px;
             display: flex;
-            justify-content: space-evenly;
+            // justify-content: space-between;
             align-items: center;
             width: 1175px;
-            .navig-cta{
-                color: $highPink;
-                font-weight: bold;
-            }
+            li{
+            margin-right: 26px;
+            padding-bottom: 2px;
+            transition-duration: 50ms;
+                &:hover{
+                    border-bottom: 2px solid black;
+                }
+            }            
             .active{
                 border-bottom: 2px solid black;
             }
+            
         }
     }
 }
@@ -86,6 +104,10 @@ header{
                 background-color: $highPink;
                 text-align: center;
                 color: #ffff;
+                transition-duration: 300ms;
+                &:hover{
+                    background-color: #ff7f9c;
+                }
             }
         }
         order: 1;
@@ -95,6 +117,7 @@ header{
 .contact-infos{
     padding-right: 315px;
     margin-top: -65px;
+    margin-bottom: 50px;
     .contact-items{
         display: flex;
         justify-content: space-between;
@@ -118,9 +141,31 @@ header{
         }
     }
 }
-
+.second{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    .vilogo{
+        font-family: 'Libre Baskerville', serif;
+        font-size: 52px;
+        text-align: center;
+        padding-top: 23px;
+        padding-left: 26px;
+        letter-spacing: -0.08em;
+        .vilogo-small-i{
+            letter-spacing: -0.09em;
+            font-size: 27px;
+            color: $highPink;
+        }
+    }
+}
 .social-items{
+    padding-bottom: 50px;
     .social-item{
+        padding-top: 23px;
         width: 1.2rem;
+        opacity: 0.5;
     }
 }
