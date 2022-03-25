@@ -1,6 +1,12 @@
 @import 'reset/reset';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Open+Sans&family=Poppins&family=Roboto:wght@500;900&display=swap');
+$highText: #383838;
+$highPink: #F1214F;
+body{
+    a{
+        cursor: pointer;
+    }
+}
 // Header 
 // Navigation
 header{
@@ -14,7 +20,7 @@ header{
             align-items: center;
             width: 1175px;
             .navig-cta{
-                color: #F1214F;
+                color: $highPink;
                 font-weight: bold;
             }
             .active{
@@ -24,9 +30,94 @@ header{
     }
 }
 
+//Intro
+.container-large{
+    padding: 0 5rem;
+}
 
+.masthead-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .masthead-image{
+        order: 2;
+    }
+    .masthead-informations{
+        margin-top: 190px;
+        min-width: 300px;
+        .masthead-salutation{
+            h2{
+                font-family: 'Metrophobic', sans-serif;
+                font-size: 22px;
+                line-height: 120%;
+            }
+        }
+        .masthead-intro{
+            font-family: 'Roboto', sans-serif;
+            color: $highText;
+            h1,h2,h3{
+                line-height: 120%;
+                letter-spacing: -0.08em;
+            }
+            h1{
+                font-size: 102px;
+                font-weight: 900;
+            }
+            h2{
+                font-size: 52px;
+                font-weight: 500;
+            }
+            h3{
+                font-size: 32px;
+                font-weight: 500;
+            }
+            .pink{
+                color: $highPink;
+            }
+        }
+        .masthead-call-to-action{
+            margin-top: 44px;
+            a{
+                display: inline-block;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                font-weight: 600;
+                padding: 16px 55px;
+                background-color: $highPink;
+                text-align: center;
+                color: #ffff;
+            }
+        }
+        order: 1;
+    }
+}
 
-
+.contact-infos{
+    padding-right: 315px;
+    margin-top: -65px;
+    .contact-items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $highText;
+        .sp{
+            border: 1px solid $highText;
+            height: 52px;
+            opacity: 0.5;
+        }
+        li{
+            .contact-title{
+                font-family: 'Roboto', sans-serif;
+                font-weight: 900;
+                display: block;
+            }
+            .contact-info{
+                font-family: 'Open Sans', sans-serif;
+                font-size: 17px;
+            }
+        }
+    }
+}
 
 .social-items{
     .social-item{
