@@ -1,8 +1,28 @@
 @import 'reset/reset';
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 // Header 
-
+// Navigation
+header{
+    nav{
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        .items{
+            padding-top: 43px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 1175px;
+            .navig-cta{
+                color: #F1214F;
+                font-weight: bold;
+            }
+            .active{
+                border-bottom: 2px solid black;
+            }
+        }
+    }
+}
 
 
 
